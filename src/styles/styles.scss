@@ -1,6 +1,8 @@
 @forward "globals";
-@use "globals";
+@use "globals" as g;
 
 body {
-  color: globals.$colors-Grey200;
+  @include g.typography-alata-font;
+  background-color: g.$colors-White;
+  position: relative;
 }

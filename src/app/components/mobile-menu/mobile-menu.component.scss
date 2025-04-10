@@ -1,0 +1,40 @@
+@use "../../../styles/styles.scss" as s;
+
+.mobile-menu {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(s.$colors-Black, 1);
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 1rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    &:last-of-type {
+      aspect-ratio: 1/1;
+      width: 1.5rem;
+    }
+  }
+  &__nav {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin: 2rem 0;
+      }
+    }
+  }
+  &__link {
+    @include s.typography-josefin-font;
+    font-size: 1.5rem;
+    color: s.$colors-White;
+    text-decoration: none;
+  }
+}
