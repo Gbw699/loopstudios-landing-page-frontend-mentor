@@ -1,0 +1,6 @@
+@forward "globals";
+@use "globals";
+
+body {
+  color: globals.$colors-Grey200;
+}
