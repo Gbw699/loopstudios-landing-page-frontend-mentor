@@ -1,6 +1,7 @@
 @use "../../../styles/styles.scss" as s;
 
 .section {
+  margin-bottom: 5.5rem;
   &__image-container {
     width: 100%;
     height: auto;
@@ -14,11 +15,7 @@
     padding: 1rem;
   }
   &__title {
-    @include s.mixins-titles // @include s.typography-josefin-font;
-      // font-size: 2rem;
-      // text-align: center;
-      // margin-bottom: 0;
-;
+    @include s.mixins-titles;
   }
   &__text {
     text-align: center;

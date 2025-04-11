@@ -1,0 +1,11 @@
+@use "../../../styles/styles.scss" as s;
+
+.section {
+  &__title {
+    @include s.mixins-titles;
+  }
+  &__image-container {
+  }
+  &__text {
+  }
+}
