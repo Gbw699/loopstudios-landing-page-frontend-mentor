@@ -16,7 +16,7 @@
       grid-column: 6 / 7;
     }
   }
-  &__text {
+  &__title {
     @include s.typography-josefin-font;
     color: s.$colors-White;
     border: 1px solid s.$colors-White;
