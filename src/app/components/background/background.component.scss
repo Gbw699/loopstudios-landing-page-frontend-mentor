@@ -1,0 +1,28 @@
+@use "../../../styles/styles.scss" as s;
+
+.section {
+  &__image-container {
+    width: 100%;
+    height: auto;
+    img {
+      width: inherit;
+    }
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  &__title {
+    @include s.typography-josefin-font;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  &__text {
+    text-align: center;
+    line-height: 1.6rem;
+    color: rgba($color: s.$colors-Black, $alpha: 0.5);
+    margin-bottom: 0;
+  }
+}
