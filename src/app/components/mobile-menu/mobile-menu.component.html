@@ -1,19 +1,42 @@
-<div class="mobile-menu">
+<div class="mobile-menu" [class.mobile-menu--opened]="isOpen()">
   <div class="mobile-menu__header">
-    <img class="mobile-menu__img" src="./images/logo.svg" alt="logo image" />
+    <a href="#home">
+      <img class="mobile-menu__img" src="./images/logo.svg" alt="logo image" />
+    </a>
     <img
       class="mobile-menu__img"
       src="./images/icon-close.svg"
       alt="hamburger menu icon"
+      (click)="closeMenu()"
     />
   </div>
   <nav class="mobile-menu__nav">
     <ul>
-      <li><a class="mobile-menu__link" href="#">ABOUT</a></li>
-      <li><a class="mobile-menu__link" href="#">CAREERS</a></li>
-      <li><a class="mobile-menu__link" href="#">EVENTS</a></li>
-      <li><a class="mobile-menu__link" href="#">PRODUCTS</a></li>
-      <li><a class="mobile-menu__link" href="#">SUPPORT</a></li>
+      <li>
+        <a class="mobile-menu__link" href="#about" (click)="closeMenu()"
+          >ABOUT</a
+        >
+      </li>
+      <li>
+        <a class="mobile-menu__link" href="#careers" (click)="closeMenu()"
+          >CAREERS</a
+        >
+      </li>
+      <li>
+        <a class="mobile-menu__link" href="#events" (click)="closeMenu()"
+          >EVENTS</a
+        >
+      </li>
+      <li>
+        <a class="mobile-menu__link" href="#products" (click)="closeMenu()"
+          >PRODUCTS</a
+        >
+      </li>
+      <li>
+        <a class="mobile-menu__link" href="#support" (click)="closeMenu()"
+          >SUPPORT</a
+        >
+      </li>
     </ul>
   </nav>
 </div>
