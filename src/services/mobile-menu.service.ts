@@ -4,7 +4,7 @@ import { Injectable, signal, WritableSignal } from '@angular/core';
   providedIn: 'root',
 })
 export class MobileMenuService {
-  isOpen: WritableSignal<boolean> = signal(true);
+  isOpen: WritableSignal<boolean> = signal(false);
 
   constructor() {}
 

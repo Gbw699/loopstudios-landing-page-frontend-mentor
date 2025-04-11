@@ -10,10 +10,6 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-in-out;
-  &--opened {
-    visibility: visible;
-    opacity: 1;
-  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -43,5 +39,9 @@
     font-size: 1.5rem;
     color: s.$colors-White;
     text-decoration: none;
+  }
+  &--opened {
+    visibility: visible;
+    opacity: 1;
   }
 }
