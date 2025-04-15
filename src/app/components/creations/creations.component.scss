@@ -3,9 +3,27 @@
 .section {
   &__title {
     @include s.mixins-titles;
+    margin-bottom: 3rem;
   }
   &__image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    img {
+      width: inherit;
+    }
+  }
+  &__text-container {
+    position: absolute;
+    z-index: 2;
+    top: 3.5rem;
+    left: 1.5rem;
   }
   &__text {
+    @include s.typography-josefin-font;
+    font-size: 1.5rem;
+    margin: 0;
+    color: s.$colors-Grey200;
   }
 }
