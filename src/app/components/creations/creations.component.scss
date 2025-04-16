@@ -1,21 +1,46 @@
 @use "../../../styles/styles.scss" as s;
 
 .section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   &__title {
     @include s.mixins-titles;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   &__image-container {
-    position: relative;
     width: 100%;
     height: auto;
-    margin-bottom: 1.5rem;
+    padding: 3.5rem 0 1.5rem 1rem;
     img {
       width: inherit;
     }
+    &--1 {
+      @include s.mixins-background1;
+    }
+    &--2 {
+      @include s.mixins-background2;
+    }
+    &--3 {
+      @include s.mixins-background3;
+    }
+    &--4 {
+      @include s.mixins-background4;
+    }
+    &--5 {
+      @include s.mixins-background5;
+    }
+    &--6 {
+      @include s.mixins-background6;
+    }
+    &--7 {
+      @include s.mixins-background7;
+    }
+    &--8 {
+      @include s.mixins-background8;
+    }
   }
   &__text-container {
-    position: absolute;
     z-index: 2;
     top: 3.5rem;
     left: 1.5rem;

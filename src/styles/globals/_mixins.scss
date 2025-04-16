@@ -1,8 +1,55 @@
 @use "typography" as t;
+@use "colors" as c;
 
 @mixin titles {
   @include t.josefin-font;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 0;
+}
+
+.background-default {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin background1 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-deep-earth.jpg");
+  @extend .background-default;
+}
+@mixin background2 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-night-arcade.jpg");
+  @extend .background-default;
+}
+@mixin background3 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-soccer-team.jpg");
+  @extend .background-default;
+}
+@mixin background4 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-grid.jpg");
+  @extend .background-default;
+}
+@mixin background5 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-from-above.jpg");
+  @extend .background-default;
+}
+@mixin background6 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-pocket-borealis.jpg");
+  @extend .background-default;
+}
+@mixin background7 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-curiosity.jpg");
+  @extend .background-default;
+}
+@mixin background8 {
+  background-image: linear-gradient(to right, rgba(c.$Black, 0.5), transparent),
+    url("/images/mobile/image-fisheye.jpg");
+  @extend .background-default;
 }
