@@ -51,4 +51,13 @@
     margin: 0;
     color: s.$colors-Grey200;
   }
+  &__btn {
+    @include s.typography-alata-font;
+    width: 50%;
+    justify-self: center;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.2rem;
+    background-color: transparent;
+    border: 1px solid s.$colors-Black;
+  }
 }
