@@ -1,0 +1,45 @@
+@use "../../../styles/styles.scss" as s;
+
+.footer {
+  background-color: s.$colors-Black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  &__nav {
+    &--pages {
+      margin: 2rem 0;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    &--socials {
+      margin: 1rem 0;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        height: fit-content;
+      }
+    }
+  }
+  &__link {
+    color: s.$colors-White;
+    text-decoration: none;
+  }
+  &__text {
+    color: rgba($color: s.$colors-Grey200, $alpha: 0.6);
+    margin: 0;
+  }
+}

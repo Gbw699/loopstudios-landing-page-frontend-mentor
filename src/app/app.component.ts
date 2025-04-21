@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { CreationsComponent } from './components/creations/creations.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { CreationsComponent } from './components/creations/creations.component';
     MobileMenuComponent,
     BackgroundComponent,
     CreationsComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -53,6 +53,7 @@
   }
   &__btn {
     @include s.typography-alata-font;
+    margin-top: 0.5rem;
     width: 50%;
     justify-self: center;
     padding: 0.5rem 2rem;
